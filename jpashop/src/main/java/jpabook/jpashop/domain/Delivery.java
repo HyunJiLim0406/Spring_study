@@ -20,5 +20,5 @@ public class Delivery {
     private Address address;
 
     @Enumerated(EnumType.STRING) //ORDINAL은 숫자로 저장해서 밀릴 위험이 있음
-    private DeliveryStatus deliveryStatus; //READY, COMP
+    private DeliveryStatus status; //READY, COMP
 }
