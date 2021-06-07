@@ -16,7 +16,7 @@ public class ItemRepository {
     public void save(Item item){
         if(item.getId()==null){
             em.persist(item);
-        } else { //아이템 수정
+        } else { //아이템 수정, 모든 attribute가 수정됨
             em.merge(item);
         }
     }
